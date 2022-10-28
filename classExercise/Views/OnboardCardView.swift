@@ -15,25 +15,29 @@ struct OnboardCardView: View {
         VStack(alignment: .center, spacing: 20){
             Text(onboard.title)
                 .fontWeight(.heavy)
+                .padding(.top, 550.0)
+                
+                
             
             Text("""
             \(onboard.description)
             """)
-            
+            .padding(.top, 0.0)
+            Spacer()
             ZStack{
-                Circle()
-                    .stroke(.white.opacity(0.2), lineWidth: 40)
-                    .frame(width: 260, height: 260, alignment: .center)
-                
-                Circle()
-                    .stroke(.white.opacity(0.2), lineWidth: 80)
-                    .frame(width: 260, height: 260, alignment: .center)
+//                Circle()
+//                    .stroke(.white.opacity(0.2), lineWidth: 40)
+//                    .frame(width: 260, height: 260, alignment: .center)
+//
+//                Circle()
+//                    .stroke(.white.opacity(0.2), lineWidth: 80)
+//                    .frame(width: 260, height: 260, alignment: .center)
                 
                 Image(systemName: onboard.icon)
                     .renderingMode(.original)
                     .resizable()
                     .scaledToFit()
-                
+                    .padding(.top,600)
             }
         } // outer VStack end
     }

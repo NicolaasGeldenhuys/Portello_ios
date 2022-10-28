@@ -36,9 +36,10 @@ struct OnboardingViewScreen: View {
                 ForEach(onboarding) { onboard in
                     OnboardCardView(onboard: onboard)
                 }
+                
             }
             .tabViewStyle(.page)
-            Spacer()
+           Spacer()
             Button(action: {
                 //Set onboarding complete
                 onboardingComplete = true
@@ -47,7 +48,8 @@ struct OnboardingViewScreen: View {
                     
             }
         }
-        .padding(0.0)
+        .padding(.bottom,-300)
+                
     }
 }
         

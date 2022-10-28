@@ -40,7 +40,7 @@ let CityData : [City] = [
 
 // MARK: - Onboarding data
 let OnboardingData: [Onboard] = [
-    Onboard(title: "Cook", description: "Cook up some amazing recipe ideas.", ),
+    Onboard(title: "Cook", description: "Cook up some amazing recipe ideas.", icon: ""),
     Onboard(title: "Plate", description: "Click on buttons to view individually", icon: "globe.europe.africa.fill"),
     Onboard(title: "Serve", description: "View specific details about the weather liek humidity and wind speed", icon: "humidity")
 ]
