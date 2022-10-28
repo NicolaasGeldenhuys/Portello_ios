@@ -40,7 +40,7 @@ let CityData : [City] = [
 
 // MARK: - Onboarding data
 let OnboardingData: [Onboard] = [
-    Onboard(title: "Cloud Cast.", description: "Find weather in all the cities you love", icon: "cloud.sun.fill"),
-    Onboard(title: "Weather.", description: "Click on buttons to view individually", icon: "globe.europe.africa.fill"),
-    Onboard(title: "Details", description: "View specific details about the weather liek humidity and wind speed", icon: "humidity")
+    Onboard(title: "Cook", description: "Cook up some amazing recipe ideas.", ),
+    Onboard(title: "Plate", description: "Click on buttons to view individually", icon: "globe.europe.africa.fill"),
+    Onboard(title: "Serve", description: "View specific details about the weather liek humidity and wind speed", icon: "humidity")
 ]
