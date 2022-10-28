@@ -18,6 +18,7 @@ struct OnboardingViewScreen: View {
         
         
         GeometryReader { geo in
+            TabView{
             ZStack{
                 Image("onboarding1")
                     .resizable()
@@ -32,30 +33,35 @@ struct OnboardingViewScreen: View {
 //            .resizable()
         VStack(){
             
-            TabView{
+            
+                
                 ForEach(onboarding) { onboard in
                     OnboardCardView(onboard: onboard)
+                    
                 }
                 
-            }
+            
             .tabViewStyle(.page)
            Spacer()
+            
             Button(action: {
                 //Set onboarding complete
                 onboardingComplete = true
             }) {
                 Text("Get Started")
-                    
+                    .accentColor(.red)
             }
+            
         }
-        .padding(.bottom,-300)
+        .padding(.bottom,-180)
+        .padding(.leading,-60)
                 
     }
 }
         
     }//zstack for image
 }//georeader
-
+}//tabview
 struct OnboardingViewScreen_Previews: PreviewProvider {
     static var previews: some View {
         OnboardingViewScreen()

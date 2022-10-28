@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69F69563290C682C00F12467 /* Gobold CUTS.otf in Resources */ = {isa = PBXBuildFile; fileRef = 69F69562290C682C00F12467 /* Gobold CUTS.otf */; };
 		BD31B7C228F972B50028F2B7 /* classExerciseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD31B7C128F972B50028F2B7 /* classExerciseApp.swift */; };
 		BD31B7C428F972B50028F2B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD31B7C328F972B50028F2B7 /* ContentView.swift */; };
 		BD31B7C628F972B60028F2B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD31B7C528F972B60028F2B7 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69F69562290C682C00F12467 /* Gobold CUTS.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gobold CUTS.otf"; sourceTree = SOURCE_ROOT; };
 		BD31B7BE28F972B50028F2B7 /* classExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = classExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD31B7C128F972B50028F2B7 /* classExerciseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classExerciseApp.swift; sourceTree = "<group>"; };
 		BD31B7C328F972B50028F2B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		BD31B7B528F972B50028F2B7 = {
 			isa = PBXGroup;
 			children = (
+				69F69562290C682C00F12467 /* Gobold CUTS.otf */,
 				BD31B7C028F972B50028F2B7 /* classExercise */,
 				BD31B7BF28F972B50028F2B7 /* Products */,
 			);
@@ -192,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69F69563290C682C00F12467 /* Gobold CUTS.otf in Resources */,
 				BD31B7CA28F972B60028F2B7 /* Preview Assets.xcassets in Resources */,
 				BD31B7C628F972B60028F2B7 /* Assets.xcassets in Resources */,
 			);

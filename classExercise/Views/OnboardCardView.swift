@@ -12,11 +12,11 @@ struct OnboardCardView: View {
     var onboard: Onboard
     
     var body: some View {
-        VStack(alignment: .center, spacing: 20){
+        VStack(alignment: .leading, spacing: 20){
             Text(onboard.title)
-                .fontWeight(.heavy)
+                .fontWeight(.regular)
                 .padding(.top, 550.0)
-                
+                .font(.custom("Gobold CUTS",fixedSize: 48))
                 
             
             Text("""
