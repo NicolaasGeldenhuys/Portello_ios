@@ -2,7 +2,7 @@
 //  OnboardingViewScreen.swift
 //  classExercise
 //
-//  Created by Nicolaas Geldenhuys on 2022/10/25.
+//  Created by Nicolaas Geldehuys on 2022/10/28.
 //
 
 import SwiftUI

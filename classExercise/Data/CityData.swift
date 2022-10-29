@@ -8,34 +8,31 @@
 import SwiftUI
 
 let CityData : [City] = [
-    City(name: "Southdowns", code: "PTA", icon: "cloud.fill", wind: "34 km/h", humidity: "20%", weather: [
+    City(name: "Spaghetti Bolognese", by: "By Charlize", icon: "spaghet", image2: "spaghet2", humidity: "", weather: [
         WeekdayTemperature(dayOfWeek: "MON", imageName: "cloud.fill", temperature: 19),
         WeekdayTemperature(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 25)
     ]),
-    City(name: "Midrand", code: "JHB", icon: "cloud.fill", wind: "25 km/h", humidity: "60%", weather: [
+    City(name: "Sushi Classics", by: "By Annatjie", icon: "sushi", image2: "sushi2", humidity: "", weather: [
         WeekdayTemperature(dayOfWeek: "MON", imageName: "cloud.fill", temperature: 19),
         WeekdayTemperature(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 25)
     ]),
-    City(name: "Midrand", code: "JHB", icon: "cloud.fill", wind: "25 km/h", humidity: "60%", weather: [
+    City(name: "Hotdog Twists", by: "By Jeanette", icon: "hotdog", image2: "hotdog2", humidity: "", weather: [
         WeekdayTemperature(dayOfWeek: "MON", imageName: "cloud.fill", temperature: 19),
         WeekdayTemperature(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 25)
     ]),
-    City(name: "Midrand", code: "JHB", icon: "cloud.fill", wind: "25 km/h", humidity: "60%", weather: [
+    City(name: "Starter Love", by: "By Jennifer", icon: "starter", image2: "starter2", humidity: "", weather: [
         WeekdayTemperature(dayOfWeek: "MON", imageName: "cloud.fill", temperature: 19),
         WeekdayTemperature(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 25)
     ]),
-    City(name: "Midrand", code: "JHB", icon: "cloud.fill", wind: "25 km/h", humidity: "60%", weather: [
+    City(name: "The best potatoes", by: "By Connie", icon: "bread", image2: "bread2", humidity: "", weather: [
         WeekdayTemperature(dayOfWeek: "MON", imageName: "cloud.fill", temperature: 19),
         WeekdayTemperature(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 25)
     ]),
-    City(name: "Midrand", code: "JHB", icon: "cloud.fill", wind: "25 km/h", humidity: "60%", weather: [
+    City(name: "Dessert for all", by: "By Martin", icon: "dessert", image2: "dessert2", humidity: "", weather: [
         WeekdayTemperature(dayOfWeek: "MON", imageName: "cloud.fill", temperature: 19),
         WeekdayTemperature(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 25)
     ]),
-    City(name: "Midrand", code: "JHB", icon: "cloud.fill", wind: "25 km/h", humidity: "60%", weather: [
-        WeekdayTemperature(dayOfWeek: "MON", imageName: "cloud.fill", temperature: 19),
-        WeekdayTemperature(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 25)
-    ]),
+    
 ]
 
 // MARK: - Onboarding data

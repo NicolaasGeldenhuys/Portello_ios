@@ -10,9 +10,9 @@ import SwiftUI
 struct City: Identifiable {
     var id = UUID()
     var name: String
-    var code: String
+    var by: String
     var icon: String
-    var wind: String
+    var image2: String
     var humidity: String
     var weather: [WeekdayTemperature]
 
