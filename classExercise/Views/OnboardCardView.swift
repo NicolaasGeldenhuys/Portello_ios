@@ -32,16 +32,22 @@ struct OnboardCardView: View {
                         .font(Font.custom("Gobold CUTS", size: 40))
                         .frame(width: 20, height: .infinity,alignment: .leading)
                     
-                    
-                    Text("""
+                   
+                        
+                        Text("""
             \(onboard.description)
             """)
+                        
+                        .font(Font.custom("Montserrat", size: 22))
+                        .fontWeight(.regular)
+                        .frame(width: 350)
+                        .padding(.top, 150)
+                        .padding(.leading,-20)
+                        
+                        .lineSpacing(5)
+                        
+//                        .frame(width: 220, height: 150, alignment: .leading)
                     
-                    .fontWeight(.regular)
-                    .frame(width: 420, height: 300,alignment: .center)
-                    .padding(.top, 20)
-                    .padding(.leading,-80)
-                    .padding(.trailing, -120)
 //                    .border(.white)
                     
                     Spacer()
@@ -68,6 +74,6 @@ struct OnboardCardView: View {
 
 struct OnboardCardView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardCardView(onboard: OnboardingData[2])
+        OnboardCardView(onboard: OnboardingData[0])
     }
 }

@@ -40,7 +40,7 @@ let CityData : [City] = [
 
 // MARK: - Onboarding data
 let OnboardingData: [Onboard] = [
-    Onboard(title: "  Cook", description: "Cook up some amazing recipe ideas. See something you want to do but scared it gets lost in the abyss of your social media archive? Well that’s why we’re here to help!", icon: "", image: "onboarding1"),
-    Onboard(title: "  Plate", description: "Capture your favorite recipes all in one place! Whether it’s a beautifully prepared family recipe or even your own! Write it down and get excited!", icon: "", image: "onboarding2"),
-    Onboard(title: "  Serve", description: "Finally follow your instructions and get those yummy ingredients ready! Share with friends and family and enjoy!", icon: "", image: "onboarding3")
+    Onboard(title: "  Cook", description: "\n\nCook up some amazing recipe ideas. See something you want to do but scared it gets lost in the abyss of your social media archive? \n\nWell that’s why we’re here to help!", icon: "", image: "onboarding1"),
+    Onboard(title: "  Plate", description: "Capture your favorite recipes all in one place! Whether it’s a beautifully prepared family recipe or even your own! \n\nWrite it down and get excited!", icon: "", image: "onboarding2"),
+    Onboard(title: "  Serve", description: "Finally follow your instructions and get those yummy ingredients ready! \n\nShare with friends and family and enjoy!", icon: "", image: "onboarding3")
 ]

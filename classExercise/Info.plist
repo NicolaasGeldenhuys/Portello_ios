@@ -5,6 +5,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>gobold.otf</string>
+		<string>Montserrat-VariableFont_wght.ttf</string>
 	</array>
 </dict>
 </plist>

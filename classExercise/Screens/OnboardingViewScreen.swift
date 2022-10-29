@@ -15,10 +15,10 @@ struct OnboardingViewScreen: View {
     var onboarding: [Onboard] = OnboardingData
     
     var body: some View {
-        WindowGroup{
-            
-            SplashScreenView_()
-            
+        
+//        WindowGroup{
+//            SplashScreenView_()
+//        }
         
             ZStack{
                 Color("bg2")
@@ -49,7 +49,8 @@ struct OnboardingViewScreen: View {
                             .padding(.leading,40)
                             .padding(.trailing,40)
                             .foregroundColor(Color("bg"))
-                        
+                            .font(Font.custom("Montserrat", size: 18))
+                            .fontWeight(.regular)
                         
                             .overlay(
                                 RoundedRectangle(cornerRadius: 40).fill(Color("bg")).opacity(0.2)
@@ -68,7 +69,7 @@ struct OnboardingViewScreen: View {
                 
                 //        .padding(.leading,-60)
             }
-        } //groupwindow
+        
     }
 }//ZStack
 //    }//zstack for image
