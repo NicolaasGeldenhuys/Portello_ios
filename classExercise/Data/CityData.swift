@@ -3,30 +3,32 @@
 import SwiftUI
 
 let CityData : [City] = [
-    City(name: "Spaghetti Bolognese", by: "By Charlize", icon: "spaghet", image2: "spaghet2", time: "25", weather: [
-        WeekdayTemperature(dayOfWeek: "MON", imageName: "cloud.fill", temperature: 19),
-        WeekdayTemperature(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 25)
-    ]),
-    City(name: "Sushi Classics", by: "By Annatjie", icon: "sushi", image2: "sushi2", time: "40", weather: [
-        WeekdayTemperature(dayOfWeek: "MON", imageName: "cloud.fill", temperature: 19),
-        WeekdayTemperature(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 25)
-    ]),
-    City(name: "Hotdog Twists", by: "By Jeanette", icon: "hotdog", image2: "hotdog2", time: "10", weather: [
-        WeekdayTemperature(dayOfWeek: "MON", imageName: "cloud.fill", temperature: 19),
-        WeekdayTemperature(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 25)
-    ]),
-    City(name: "Starter Love", by: "By Jennifer", icon: "starter", image2: "starter2", time: "15", weather: [
-        WeekdayTemperature(dayOfWeek: "MON", imageName: "cloud.fill", temperature: 19),
-        WeekdayTemperature(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 25)
-    ]),
-    City(name: "The best potatoes", by: "By Connie", icon: "bread", image2: "bread2", time: "45", weather: [
-        WeekdayTemperature(dayOfWeek: "MON", imageName: "cloud.fill", temperature: 19),
-        WeekdayTemperature(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 25)
-    ]),
-    City(name: "Dessert for all", by: "By Martin", icon: "dessert", image2: "dessert2", time: "35", weather: [
-        WeekdayTemperature(dayOfWeek: "MON", imageName: "cloud.fill", temperature: 19),
-        WeekdayTemperature(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 25)
-    ]),
+    City(name: "Spaghetti Bolognese", by: "By Charlize", icon: "spaghet", image2: "spaghet2", time: "25", about: "Our best ever spaghetti bolognese is super easy and a true italian classic.", ingred: """
+         
+         
+         
+         • 1tbsp olive oil
+         • 2 medium onions
+         • 400g spaghetti
+         • 4 rashers of bacon
+         • 2 celery sticks
+         • 2tbsp tomato puree
+         • 800g tomatoes
+         • 500g mince
+         
+         
+         
+         """),
+    
+    City(name: "Sushi Classics", by: "By Annatjie", icon: "sushi", image2: "sushi2", time: "40", about: "", ingred: "" ),
+    
+    City(name: "Hotdog Twists", by: "By Jeanette", icon: "hotdog", image2: "hotdog2", time: "10", about: "", ingred: "" ),
+    
+    City(name: "Starter Love", by: "By Jennifer", icon: "starter", image2: "starter2", time: "15", about: "", ingred: "" ),
+    
+    City(name: "The best potatoes", by: "By Connie", icon: "bread", image2: "bread2", time: "45", about: "", ingred: "" ),
+    
+    City(name: "Dessert for all", by: "By Martin", icon: "dessert", image2: "dessert2", time: "35", about: "", ingred: "" ),
     
 ]
 

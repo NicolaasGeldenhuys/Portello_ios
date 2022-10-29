@@ -4,6 +4,9 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State var showingred: Bool = false
+    @State var showinst: Bool = false
+    
     // MARK: - Properties
     var city: City = CityData[0]
     
@@ -17,6 +20,53 @@ struct ContentView: View {
                 Color("bg2")
                     .ignoresSafeArea(.all)
                 
+                
+                
+                    DisclosureGroup("Ingredients", isExpanded: $showinst){
+                        ScrollView{
+                        Text(city.ingred)
+                                .font(Font.custom("Montserrat", size: 16))
+                                .fontWeight(.regular)
+                                .padding()
+                                .lineSpacing(5)
+                                .fixedSize()
+                                .frame(height:80)
+                                .frame(maxWidth: .infinity)
+                        
+                        
+                            
+                            
+                        } //Scrollview
+                        
+                    }
+//                    .padding(.top,250)
+                
+               
+                
+                    .padding(.leading, 20)
+                    .padding(.trailing, 20)
+                .padding(.top, 250)
+                
+                Spacer()
+                Divider()
+                
+                    DisclosureGroup("Instructions", isExpanded: $showingred){
+                        
+                        
+                        Text("""
+                    \(city.about)
+                    """)
+                        .font(Font.custom("Montserrat", size: 16))
+                        .fontWeight(.regular)
+                        .padding()
+                        .lineSpacing(5)
+                        
+                        
+                    }
+                    .padding(.leading, 20)
+                    .padding(.trailing, 20)
+                .padding(.top, 100)
+               
                 
                 
                 
@@ -84,11 +134,39 @@ struct ContentView: View {
                             .fontWeight(.regular)
                     } //HStack title
                     
+                    ZStack{
+                        Text("About")
+                        
+                            .font(Font.custom("Montserrat", size: 18))
+                            .fontWeight(.bold)
+                            .frame(width: 350)
+                            .padding(.top, 180)
+                            .padding(.leading, -300)
+                            .lineSpacing(5)
+                        
+                        
+                        Text("""
+                    \(city.about)
+                    """)
+                        
+                        .font(Font.custom("Montserrat", size: 18))
+                        .fontWeight(.regular)
+                        .frame(width: 350)
+                        .padding(.top, 200)
+                        .padding(.bottom, -100)
+                        .padding(.leading, -20)
+                        .lineSpacing(5)
+                        
+                    } //ZStack About
                     
-                  
                     
                     
                     
+                    
+                        
+                   
+                    
+                        
                     
                     VStack{
                         Image(systemName: "\(city.icon)")
@@ -97,17 +175,17 @@ struct ContentView: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 160, height: 160, alignment: .center) // an example from implementing an image from SF Symbols
                         
-                        Text("\(city.weather[0].temperature)º")
-                            .font(.system(size: 80, weight: .medium))
-                            .foregroundColor(.white)
-                            .padding(.vertical, 20)
+//                        Text("\(city.about[0].temperature)º")
+//                            .font(.system(size: 80, weight: .medium))
+//                            .foregroundColor(.white)
+//                            .padding(.vertical, 20)
                         
                         HStack(spacing: 15){
                             
                             // Example of for loop
-                            ForEach(city.weather, id: \.self.id) {temp in
-                                WeatherForecastView(dayOfWeek: temp.dayOfWeek, imageName: temp.imageName, temperature: temp.temperature)
-                            }
+//                            ForEach(city.about, id: \.self.id) {temp in
+//                                WeatherForecastView(dayOfWeek: temp.dayOfWeek, imageName: temp.imageName, temperature: temp.temperature)
+//                            }
                         }
                         
                         Spacer()
@@ -117,23 +195,23 @@ struct ContentView: View {
                             ForecastCardView(text: "Humidity", icon: "thermometer", value: "23%")
                         }
                         .frame(height: 150)
-                        .padding()
+                        .padding(.top, 150)
                         .tabViewStyle(.page)
                         
                         Spacer()
                         
-                        Button(action: {
-                            
-                        }) {
-                            Image(systemName: "arrow.clockwise.circle")
-                                .foregroundColor(.white)
-                            
-                            Text("Change Location")
-                                .foregroundColor(.white)
-                        }.padding()
-                            .buttonStyle(.bordered)
-                            .border(.white, width: 1)
-                            .buttonBorderShape(.capsule)
+//                        Button(action: {
+//
+//                        }) {
+//                            Image(systemName: "arrow.clockwise.circle")
+//                                .foregroundColor(.white)
+//
+//                            Text("Change Location")
+//                                .foregroundColor(.white)
+//                        }.padding()
+//                            .buttonStyle(.bordered)
+//                            .border(.white, width: 1)
+//                            .buttonBorderShape(.capsule)
                     }
                 }
             }

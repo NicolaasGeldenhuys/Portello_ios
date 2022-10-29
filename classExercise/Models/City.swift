@@ -9,6 +9,7 @@ struct City: Identifiable {
     var icon: String
     var image2: String
     var time: String
-    var weather: [WeekdayTemperature]
+    var about: String
+    var ingred: String
 
 }
