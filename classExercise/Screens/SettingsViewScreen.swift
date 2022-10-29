@@ -1,8 +1,4 @@
-//
-//  SettingsViewScreen.swift
-//
 //  Created by Nicolaas Geldehuys on 2022/10/28.
-//
 
 import SwiftUI
 

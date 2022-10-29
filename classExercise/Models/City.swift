@@ -1,9 +1,4 @@
-//
-//  City.swift
-//  classExercise
-//
-//  Created by Wiaan Duvenhage on 2022/10/14.
-//
+//  Created by Nicolaas Geldehuys on 2022/10/28.
 
 import SwiftUI
 
@@ -13,7 +8,7 @@ struct City: Identifiable {
     var by: String
     var icon: String
     var image2: String
-    var humidity: String
+    var time: String
     var weather: [WeekdayTemperature]
 
 }

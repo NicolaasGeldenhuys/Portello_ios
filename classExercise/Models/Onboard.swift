@@ -1,9 +1,4 @@
-//
-//  Onboard.swift
-//  classExercise
-//
-//  Created by Wiaan Duvenhage on 2022/10/14.
-//
+//  Created by Nicolaas Geldehuys on 2022/10/28.
 
 import SwiftUI
 

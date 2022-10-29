@@ -1,9 +1,4 @@
-//
-//  ContentView.swift
-//  classExercise
-//
 //  Created by Nicolaas Geldehuys on 2022/10/28.
-//
 
 import SwiftUI
 
@@ -37,18 +32,63 @@ struct ContentView: View {
                     .padding(.top, -350)
                 
                 
+                HStack {
+                    Image(systemName: "clock")
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                         .foregroundColor(.white)
+                         .padding(.trailing, 320)
+                         .scaledToFill()
+                         
+                         
+                         .padding(.top,-215)
+                     
+                     Text("\(city.time) min")
+                         .foregroundColor(.white)
+                         .font(Font.custom("Montserrat", size: 16))
+                         .fontWeight(.regular)
+                         .padding(.top,-215)
+                         .padding(.leading, -310)
+                 } //HStack title
+                
+                
+                
+                HStack {
+                    
+                     
+                     Text("\(city.by)")
+                         .foregroundColor(.white)
+                         .font(Font.custom("Montserrat", size: 16))
+                         .fontWeight(.regular)
+                         .padding(.top,-215)
+                         .padding(.leading, 240)
+                 } //HStack title
+                
+                
+                
                 VStack(alignment: .center){
                     
                     HStack {
+                        Image("back")
+                            .resizable()
+                            .foregroundColor(.white)
+                            .padding(.trailing,70)
+                            .scaledToFill()
+                            .frame(width: 30, height: 30)
+                            .ignoresSafeArea(.all)
+                            
+                        
                         Text("\(city.name)")
                             .foregroundColor(.white)
                             .font(Font.custom("Gobold CUTS", size: 28))
                             .fontWeight(.regular)
-                        
-                        Image(systemName: "arrow")
-                            .foregroundColor(.white)
-                        
                     } //HStack title
+                    
+                    
+                  
+                    
+                    
+                    
                     
                     VStack{
                         Image(systemName: "\(city.icon)")

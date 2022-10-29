@@ -1,34 +1,29 @@
-//
-//  CityData.swift
-//  classExercise
-//
-//  Created by Wiaan Duvenhage on 2022/10/14.
-//
+//  Created by Nicolaas Geldehuys on 2022/10/28.
 
 import SwiftUI
 
 let CityData : [City] = [
-    City(name: "Spaghetti Bolognese", by: "By Charlize", icon: "spaghet", image2: "spaghet2", humidity: "", weather: [
+    City(name: "Spaghetti Bolognese", by: "By Charlize", icon: "spaghet", image2: "spaghet2", time: "25", weather: [
         WeekdayTemperature(dayOfWeek: "MON", imageName: "cloud.fill", temperature: 19),
         WeekdayTemperature(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 25)
     ]),
-    City(name: "Sushi Classics", by: "By Annatjie", icon: "sushi", image2: "sushi2", humidity: "", weather: [
+    City(name: "Sushi Classics", by: "By Annatjie", icon: "sushi", image2: "sushi2", time: "40", weather: [
         WeekdayTemperature(dayOfWeek: "MON", imageName: "cloud.fill", temperature: 19),
         WeekdayTemperature(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 25)
     ]),
-    City(name: "Hotdog Twists", by: "By Jeanette", icon: "hotdog", image2: "hotdog2", humidity: "", weather: [
+    City(name: "Hotdog Twists", by: "By Jeanette", icon: "hotdog", image2: "hotdog2", time: "10", weather: [
         WeekdayTemperature(dayOfWeek: "MON", imageName: "cloud.fill", temperature: 19),
         WeekdayTemperature(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 25)
     ]),
-    City(name: "Starter Love", by: "By Jennifer", icon: "starter", image2: "starter2", humidity: "", weather: [
+    City(name: "Starter Love", by: "By Jennifer", icon: "starter", image2: "starter2", time: "15", weather: [
         WeekdayTemperature(dayOfWeek: "MON", imageName: "cloud.fill", temperature: 19),
         WeekdayTemperature(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 25)
     ]),
-    City(name: "The best potatoes", by: "By Connie", icon: "bread", image2: "bread2", humidity: "", weather: [
+    City(name: "The best potatoes", by: "By Connie", icon: "bread", image2: "bread2", time: "45", weather: [
         WeekdayTemperature(dayOfWeek: "MON", imageName: "cloud.fill", temperature: 19),
         WeekdayTemperature(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 25)
     ]),
-    City(name: "Dessert for all", by: "By Martin", icon: "dessert", image2: "dessert2", humidity: "", weather: [
+    City(name: "Dessert for all", by: "By Martin", icon: "dessert", image2: "dessert2", time: "35", weather: [
         WeekdayTemperature(dayOfWeek: "MON", imageName: "cloud.fill", temperature: 19),
         WeekdayTemperature(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 25)
     ]),
