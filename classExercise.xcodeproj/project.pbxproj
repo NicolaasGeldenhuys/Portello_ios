@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		69F69563290C682C00F12467 /* Gobold CUTS.otf in Resources */ = {isa = PBXBuildFile; fileRef = 69F69562290C682C00F12467 /* Gobold CUTS.otf */; };
+		69536CC1290C7F3A00FBCFF7 /* gobold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 69F69562290C682C00F12467 /* gobold.otf */; };
+		69536CC4290CA61E00FBCFF7 /* SplashScreenView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 69536CC3290CA61D00FBCFF7 /* SplashScreenView .swift */; };
 		BD31B7C228F972B50028F2B7 /* classExerciseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD31B7C128F972B50028F2B7 /* classExerciseApp.swift */; };
 		BD31B7C428F972B50028F2B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD31B7C328F972B50028F2B7 /* ContentView.swift */; };
 		BD31B7C628F972B60028F2B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD31B7C528F972B60028F2B7 /* Assets.xcassets */; };
@@ -26,7 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		69F69562290C682C00F12467 /* Gobold CUTS.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gobold CUTS.otf"; sourceTree = SOURCE_ROOT; };
+		69536CC2290C814100FBCFF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		69536CC3290CA61D00FBCFF7 /* SplashScreenView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SplashScreenView .swift"; sourceTree = "<group>"; };
+		69F69562290C682C00F12467 /* gobold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gobold.otf; sourceTree = "<group>"; };
 		BD31B7BE28F972B50028F2B7 /* classExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = classExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD31B7C128F972B50028F2B7 /* classExerciseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classExerciseApp.swift; sourceTree = "<group>"; };
 		BD31B7C328F972B50028F2B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,7 +63,6 @@
 		BD31B7B528F972B50028F2B7 = {
 			isa = PBXGroup;
 			children = (
-				69F69562290C682C00F12467 /* Gobold CUTS.otf */,
 				BD31B7C028F972B50028F2B7 /* classExercise */,
 				BD31B7BF28F972B50028F2B7 /* Products */,
 			);
@@ -77,6 +79,8 @@
 		BD31B7C028F972B50028F2B7 /* classExercise */ = {
 			isa = PBXGroup;
 			children = (
+				69536CC2290C814100FBCFF7 /* Info.plist */,
+				69F69562290C682C00F12467 /* gobold.otf */,
 				BD58620928F989EB0021E3DE /* Screens */,
 				BD58620828F989E40021E3DE /* Views */,
 				BD58620728F989A90021E3DE /* Data */,
@@ -133,6 +137,7 @@
 				BD58620A28F98A4F0021E3DE /* HomeScreenView.swift */,
 				BDF9DCC628F9DA770050CF42 /* OnboardingViewScreen.swift */,
 				BDF9DCCC28FA11A00050CF42 /* SettingsViewScreen.swift */,
+				69536CC3290CA61D00FBCFF7 /* SplashScreenView .swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -195,9 +200,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69F69563290C682C00F12467 /* Gobold CUTS.otf in Resources */,
 				BD31B7CA28F972B60028F2B7 /* Preview Assets.xcassets in Resources */,
 				BD31B7C628F972B60028F2B7 /* Assets.xcassets in Resources */,
+				69536CC1290C7F3A00FBCFF7 /* gobold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +217,7 @@
 				BDF9DCC928F9DF480050CF42 /* OnboardCardView.swift in Sources */,
 				BD58621328F9A09C0021E3DE /* CityData.swift in Sources */,
 				BD31B7C428F972B50028F2B7 /* ContentView.swift in Sources */,
+				69536CC4290CA61E00FBCFF7 /* SplashScreenView .swift in Sources */,
 				BDF9DCC728F9DA770050CF42 /* OnboardingViewScreen.swift in Sources */,
 				BD58621128F9A0230021E3DE /* City.swift in Sources */,
 				BDF9DCCD28FA11A00050CF42 /* SettingsViewScreen.swift in Sources */,
@@ -347,6 +353,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"classExercise/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = classExercise/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -383,6 +390,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"classExercise/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = classExercise/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

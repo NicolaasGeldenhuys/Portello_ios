@@ -12,4 +12,5 @@ struct Onboard: Identifiable {
     var title: String
     var description: String
     var icon: String
+    var image: String
 }

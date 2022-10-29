@@ -13,38 +13,61 @@ struct OnboardCardView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20){
-            Text(onboard.title)
-                .fontWeight(.regular)
-                .padding(.top, 550.0)
-                .font(.custom("Gobold CUTS",fixedSize: 48))
+            GeometryReader { geo in
                 
-            
-            Text("""
+                ZStack{
+                    
+                    Image(onboard.image)
+                        .resizable()
+                        .scaledToFill()
+                        .edgesIgnoringSafeArea(.all)
+                        .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
+                        .ignoresSafeArea(.all)
+                    
+                    Text(onboard.title)
+                        .fontWeight(.regular)
+                        .padding(.top,-80)
+                        .padding(.leading,-190)
+                        
+                        .font(Font.custom("Gobold CUTS", size: 40))
+                        .frame(width: 20, height: .infinity,alignment: .leading)
+                    
+                    
+                    Text("""
             \(onboard.description)
             """)
-            .padding(.top, 0.0)
-            Spacer()
-            ZStack{
-//                Circle()
-//                    .stroke(.white.opacity(0.2), lineWidth: 40)
-//                    .frame(width: 260, height: 260, alignment: .center)
-//
-//                Circle()
-//                    .stroke(.white.opacity(0.2), lineWidth: 80)
-//                    .frame(width: 260, height: 260, alignment: .center)
-                
-                Image(systemName: onboard.icon)
-                    .renderingMode(.original)
-                    .resizable()
-                    .scaledToFit()
-                    .padding(.top,600)
+                    
+                    .fontWeight(.regular)
+                    .frame(width: 420, height: 300,alignment: .center)
+                    .padding(.top, 20)
+                    .padding(.leading,-80)
+                    .padding(.trailing, -120)
+//                    .border(.white)
+                    
+                    Spacer()
+                    ZStack{
+                        //                Circle()
+                        //                    .stroke(.white.opacity(0.2), lineWidth: 40)
+                        //                    .frame(width: 260, height: 260, alignment: .center)
+                        //
+                        //                Circle()
+                        //                    .stroke(.white.opacity(0.2), lineWidth: 80)
+                        //                    .frame(width: 260, height: 260, alignment: .center)
+                        
+                        Image(systemName: onboard.icon)
+                            .renderingMode(.original)
+                            .resizable()
+                            .scaledToFit()
+                            .padding(.top,600)
+                    }
+                } // outer VStack end
             }
-        } // outer VStack end
-    }
-}
+        }
+    }//zstack
+}//georeader
 
 struct OnboardCardView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardCardView(onboard: OnboardingData[0])
+        OnboardCardView(onboard: OnboardingData[2])
     }
 }

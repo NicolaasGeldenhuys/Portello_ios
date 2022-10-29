@@ -15,53 +15,66 @@ struct OnboardingViewScreen: View {
     var onboarding: [Onboard] = OnboardingData
     
     var body: some View {
+        WindowGroup{
+            
+            SplashScreenView_()
+            
         
-        
-        GeometryReader { geo in
-            TabView{
             ZStack{
-                Image("onboarding1")
-                    .resizable()
-                    .scaledToFill()
-                    .edgesIgnoringSafeArea(.all)
-                    .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
+                Color("bg2")
+                    .ignoresSafeArea(.all)
                 
-          
-        
-        
-//        Image("onboarding1")
-//            .resizable()
-        VStack(){
-            
-            
-                
-                ForEach(onboarding) { onboard in
-                    OnboardCardView(onboard: onboard)
+                VStack(){
+                    
+                    
+                    TabView{
+                        ForEach(onboarding) { onboard in
+                            OnboardCardView(onboard: onboard)
+                        }
+                        
+                    }//tabview
+                    
+                    
+                    
+                    .tabViewStyle(.page)
+                    //           Spacer()
+                    
+                    Button(action: {
+                        //Set onboarding complete
+                        onboardingComplete = true
+                    }) {
+                        Text("Home")
+                            .padding(.top,10)
+                            .padding(.bottom,10)
+                            .padding(.leading,40)
+                            .padding(.trailing,40)
+                            .foregroundColor(Color("bg"))
+                        
+                        
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 40).fill(Color("bg")).opacity(0.2)
+                                
+                                
+                                
+                                
+                            )
+                        
+                        
+                        //                    .padding(.leading,60)
+                    }
                     
                 }
+                .padding(.top,-60)
                 
-            
-            .tabViewStyle(.page)
-           Spacer()
-            
-            Button(action: {
-                //Set onboarding complete
-                onboardingComplete = true
-            }) {
-                Text("Get Started")
-                    .accentColor(.red)
+                //        .padding(.leading,-60)
             }
-            
-        }
-        .padding(.bottom,-180)
-        .padding(.leading,-60)
-                
+        } //groupwindow
     }
-}
-        
-    }//zstack for image
-}//georeader
-}//tabview
+}//ZStack
+//    }//zstack for image
+//}//georeader
+
+
 struct OnboardingViewScreen_Previews: PreviewProvider {
     static var previews: some View {
         OnboardingViewScreen()
