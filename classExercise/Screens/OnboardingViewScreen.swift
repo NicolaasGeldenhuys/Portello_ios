@@ -7,6 +7,8 @@ struct OnboardingViewScreen: View {
     //reference to AppStorage onboarding
     @AppStorage("onboardingComplete") var onboardingComplete = false
     
+    @State private var path = NavigationPath()
+    
     var onboarding: [Onboard] = OnboardingData
     
     var body: some View {
@@ -34,9 +36,25 @@ struct OnboardingViewScreen: View {
                     .tabViewStyle(.page)
                     //           Spacer()
                     
+                  
+                    
                     Button(action: {
                         //Set onboarding complete
                         onboardingComplete = true
+                        
+                        
+//                        NavigationStack(path: $path) {
+//
+//                                        path.append("HomeScreenView")
+//                                    }
+                            
+//                                    .navigationDestination(for: String.self) { view in
+//                                        if view == "HomeScreenView" {
+//                                            Text("This is NewView")
+//                                        }
+//                                    }
+                                
+                        
                     }) {
                         Text("Home")
                             .padding(.top,10)
@@ -46,7 +64,7 @@ struct OnboardingViewScreen: View {
                             .foregroundColor(Color("bg"))
                             .font(Font.custom("Montserrat", size: 18))
                             .fontWeight(.regular)
-                        
+                            
                             .overlay(
                                 RoundedRectangle(cornerRadius: 40).fill(Color("bg")).opacity(0.2)
                                 

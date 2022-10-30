@@ -5,145 +5,137 @@ import SwiftUI
 struct HomeScreenView: View {
     
     // MARK: - Properties
-    var cities: [City] = CityData
+    @State var cities: [City] = CityData
     
     @State var showSheet: Bool = false
     
+    @State var easy : String = ""
+    
+    var filteredCities: [City]   {
+        if  (searchText.isEmpty) {
+             return CityData
+        } else {
+            return CityData.filter { $0.name.contains(searchText) } //filtereing data through search
+        }
+    }
+    
+    var filteredAuthors: [City]   {
+        if  (searchText.isEmpty) {
+             return CityData
+        } else {
+            return CityData.filter { $0.by.contains(searchText) } //filtereing data through search
+        }
+    }
+    
+
+    
+    @State var searchText: String = ""
+    
     var body: some View {
-        
-            
+
             // Creating a list
             NavigationView{
-                
                 
             ZStack{
                 Color("bg2")
                     .ignoresSafeArea(.all)
                 
-                
-                
-               
-                
-                    
-                    
-                    
-                    List(cities) {city in
+                List(searchText.isEmpty ? cities : filteredCities) {city in
                         // Example of navigationLink
                         NavigationLink(destination: ContentView()){
-                            
-                            
                             CityItemView(city: city)
-                                
-                                
-                                
-                            
                         }
-                        
                         .listStyle(PlainListStyle())
                         .padding(.leading, 18)
-                        .listRowSeparator(.hidden)
+                    
+                    
+                        .listItemTint(.black)
+                        .listRowBackground(Color(.white))
+                        .listSectionSeparator(.hidden)
+                        .listRowSeparatorTint(.white)
+                    
+                    
                         .scrollContentBackground(.hidden)
+                        .listRowSeparator(.hidden)
+                      
+                        
+//                        Settings
+                        .navigationBarItems(trailing:
+                        Button(action: {print("Settings")
+                        showSheet.toggle()
+                        }){
+                                Picker("Mode", selection: $easy) {
+                                    Text("Easy").tag(false)
+                                        .onTapGesture {
+                                            self.cities = filteredByEasy(code: "Easy")
+                                        }
+                                    
+                                    
+                                    Text("Medium").tag(false)
+                                        .onTapGesture {
+                                            self.cities = filteredByEasy(code: "Medium")
+                                        }
+                                    Text("Hard").tag(false)
+                                        .onTapGesture {
+                                            self.cities = filteredByEasy(code: "Hard")
+                                        }
+                                }
+                                .pickerStyle(SegmentedPickerStyle())
+                                .padding(.top, 80)
+                                .padding(.leading, -40)
+                                .padding(.trailing, -40)
+                                
+                                Spacer()
+                                    
+                            
+                            
+                            
+                        Image(systemName: "gearshape")
+                        .renderingMode(.original)
+                        .foregroundColor(Color("bg"))
+                        .frame(width: 30, height: 30)
+                        .padding(.bottom, 10)
+                            
+                        }.sheet(isPresented: $showSheet){
+                            SettingsViewScreen()
+                        }
+                    ) //Navigation Bar Items
                         
                         
                         ZStack{
                             Text("")
-                                
-                            
-                            
                                 .navigationBarTitleDisplayMode(.inline)
-                                
-                                
+                                .padding(.bottom, -50)
                                 .toolbar { // <2>
                                     ToolbarItem(placement: .principal) { // <3>
                                         VStack {
                                             Text("Portello")
-                                            
-                                            
-                                            
                                                 .foregroundColor(Color("bg"))
                                                 .font(Font.custom("Gobold CUTS", size: 36))
                                                 .fontWeight(.regular)
                                                 .padding(.vertical, 10)
                                                 .padding(.leading, -170)
                                                 .padding(.bottom, 10)
-                                            
-                                            
-                                            
                                         }
-                                        
                                     }
-                                    
                                 } //toolbar
-                        } //ZStack
+                        } //ZStack navigationbartitledisplaymode
                         
-                        
-                        //NavigationView Modifiers
-//                        .navigationTitle("")
-//                        .toolbar {
-//
-//                            ToolbarItem(placement: .principal) {
-//
-//
-//                                HStack {
-//                                    Text("Portello")
-//
-//                                        .foregroundColor(Color("bg"))
-//                                        .font(Font.custom("Gobold CUTS", size: 36))
-//                                        .fontWeight(.regular)
-//                                        .padding(.vertical, 10)
-//                                        .padding(.leading, -170)
-//                                        .padding(.bottom, 10)
-//                                }
-//                            }
-//
-//                        }
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-//                        Settings
-                        .navigationBarItems(trailing:
-                                                Button(action: {print("Settings")
-                            showSheet.toggle()
-                        }){
-                            //Sheet Navigation
-                            
-                            Image(systemName: "magnifyingglass")
-                                .renderingMode(.original)
-                                .foregroundColor(Color("bg"))
-                                .frame(width: 30, height: 30)
-                                .padding(.bottom, 10)
-                            
-                            Image(systemName: "gearshape")
-                                .renderingMode(.original)
-                                .foregroundColor(Color("bg"))
-                                .frame(width: 30, height: 30)
-                                .padding(.bottom, 10)
-                            
-                            
-                        }.sheet(isPresented: $showSheet){
-                            SettingsViewScreen()
-                            
-                        }
-                        )
-                        
-                    } //navigation view
-                    
-                }
-                
-                //                ZStack(alignment: .leading){
-                //
-                //                    Text("My Library")
-                //                        .foregroundColor(Color("bg"))
-                //                        .font(Font.custom("Gobold CUTS", size: 28))
-                //                        .fontWeight(.regular)
-                //                        .padding(.top, -330)
-                //                        .padding(.leading, -170)
-                //                }
-                
+                } //List
+            }
+            }
+            
+//            .padding(.top, 40)
+            .searchable(text: $searchText)
+            
+    } // Navigation View
+    
+        
+} // Body
+    
+
+
+
 //                ZStack{
 //                    Rectangle()
 //                        .foregroundColor(Color("bg2"))
@@ -152,7 +144,7 @@ struct HomeScreenView: View {
 //                        .padding(.trailing)
 //                        .padding(.top, 760)
 //                        .padding(.leading, 10)
-//                    
+//
 //                    HStack{
 //                        Text("Total Recipes")
 //                            .fontWeight(.regular)
@@ -162,7 +154,7 @@ struct HomeScreenView: View {
 //                            .padding(.vertical, 10)
 //                            .padding(.top, 760)
 //                            .padding(.leading, 0)
-//                        
+//
 //                        Text("8")
 //                            .fontWeight(.regular)
 //                            .foregroundColor(Color("bg"))
@@ -171,7 +163,7 @@ struct HomeScreenView: View {
 //                            .padding(.vertical, 10)
 //                            .padding(.top, 760)
 //                            .padding(.leading, 0)
-//                        
+//
 //                        Text("Total Authors")
 //                            .fontWeight(.regular)
 //                            .foregroundColor(Color("bg"))
@@ -180,7 +172,7 @@ struct HomeScreenView: View {
 //                            .padding(.vertical, 10)
 //                            .padding(.top, 760)
 //                            .padding(.leading, 40)
-//                        
+//
 //                        Text("8")
 //                            .fontWeight(.regular)
 //                            .foregroundColor(Color("bg"))
@@ -192,15 +184,7 @@ struct HomeScreenView: View {
 //                    } // HStack Bottom rectangle
 //                } // Zstack bottom rectangle
                 
-                
-            }//Zstack
-        
-        
-        } // Navigation View
-        
-    } // Body
-    
-
+              
     
 
 

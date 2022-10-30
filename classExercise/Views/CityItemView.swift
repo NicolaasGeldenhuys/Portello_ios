@@ -18,20 +18,28 @@ struct CityItemView: View {
                 .scaledToFill()
                 .cornerRadius(-150)
                 .frame(width: 385, height: 135, alignment: .center)
+//                .frame(minWidth: 385, maxWidth: 385, minHeight: 135,maxHeight: 135)
+                
 //                .padding(.leading, 20)
-                .padding()
+//                .padding()
             
             VStack(alignment: .leading){
                 Text(city.name)
                     .font(.title)
                     .foregroundColor(.white)
                     .opacity(0.8)
+//                    .frame(minWidth: 385, maxWidth: 385, minHeight: 135,maxHeight: 135)
+                    
                 
-                Text(city.by)
+                
+                Text("By \(city.by)")
                     .foregroundColor(.white)
 //                    .padding(.top,40)
-//                    .padding(.leading,160)
+//                    .padding(.leading,240)
+//                    .padding(.bottom, -80)
                     .opacity(0.6)
+//                    .frame(minWidth: 385, maxWidth: 385, minHeight: 135,maxHeight: 135)
+                    
             }
         }
     }

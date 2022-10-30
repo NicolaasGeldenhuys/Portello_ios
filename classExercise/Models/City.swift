@@ -11,5 +11,5 @@ struct City: Identifiable {
     var time: String
     var about: String
     var ingred: String
-
+    var level: String
 }
