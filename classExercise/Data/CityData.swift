@@ -3,7 +3,7 @@
 import SwiftUI
 
 let CityData : [City] = [
-    City(name: "Spaghetti Bolognese", by: "By Charlize", icon: "spaghet", image2: "spaghet2", time: "25", about: "Our best ever spaghetti bolognese is super easy and a true italian classic.", ingred: """
+    City(name: "Spaghetti Bolognese", by: "By Charlize", icon: "spaghet", image2: "spaghet2", time: "25", about: "Our best ever spaghetti bolognese is super easy and a true italian classic. Meaty and tasty!", ingred: """
          
          
          

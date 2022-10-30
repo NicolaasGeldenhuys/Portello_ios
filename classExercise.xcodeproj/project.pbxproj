@@ -10,6 +10,7 @@
 		69536CC1290C7F3A00FBCFF7 /* gobold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 69F69562290C682C00F12467 /* gobold.otf */; };
 		69536CC4290CA61E00FBCFF7 /* SplashScreenView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 69536CC3290CA61D00FBCFF7 /* SplashScreenView .swift */; };
 		69839ED0290D487A000D5CFF /* Montserrat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69839ECF290D4879000D5CFF /* Montserrat-VariableFont_wght.ttf */; };
+		69BC8F11290ECC0300255AB4 /* NavigationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BC8F10290ECC0200255AB4 /* NavigationConfigurator.swift */; };
 		BD31B7C228F972B50028F2B7 /* classExerciseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD31B7C128F972B50028F2B7 /* classExerciseApp.swift */; };
 		BD31B7C428F972B50028F2B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD31B7C328F972B50028F2B7 /* ContentView.swift */; };
 		BD31B7C628F972B60028F2B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD31B7C528F972B60028F2B7 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		69536CC2290C814100FBCFF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		69536CC3290CA61D00FBCFF7 /* SplashScreenView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SplashScreenView .swift"; sourceTree = "<group>"; };
 		69839ECF290D4879000D5CFF /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		69BC8F10290ECC0200255AB4 /* NavigationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfigurator.swift; sourceTree = "<group>"; };
 		69F69562290C682C00F12467 /* gobold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gobold.otf; sourceTree = "<group>"; };
 		BD31B7BE28F972B50028F2B7 /* classExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = classExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD31B7C128F972B50028F2B7 /* classExerciseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classExerciseApp.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				BD58621028F9A0230021E3DE /* City.swift */,
 				BD58621428F9A5230021E3DE /* WeekdayTemperature.swift */,
 				BDF9DCCA28F9E7690050CF42 /* Onboard.swift */,
+				69BC8F10290ECC0200255AB4 /* NavigationConfigurator.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				BD31B7C228F972B50028F2B7 /* classExerciseApp.swift in Sources */,
 				BDF9DCCB28F9E7690050CF42 /* Onboard.swift in Sources */,
 				BD58620F28F992450021E3DE /* ForecastCardView.swift in Sources */,
+				69BC8F11290ECC0300255AB4 /* NavigationConfigurator.swift in Sources */,
 				BD58621528F9A5230021E3DE /* WeekdayTemperature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
