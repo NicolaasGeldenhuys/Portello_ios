@@ -30,7 +30,7 @@ struct ContentView: View {
                                 .padding()
                                 .lineSpacing(5)
                                 .fixedSize()
-                                .frame(height:80)
+                                .frame(height:60)
                                 .frame(maxWidth: .infinity)
                         
                         
@@ -65,7 +65,7 @@ struct ContentView: View {
                     }
                     .padding(.leading, 20)
                     .padding(.trailing, 20)
-                .padding(.top, 100)
+                    .padding(.top, 100)
                
                 
                 
@@ -169,11 +169,14 @@ struct ContentView: View {
                         
                     
                     VStack{
-                        Image(systemName: "\(city.icon)")
-                            .symbolRenderingMode(.multicolor)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 160, height: 160, alignment: .center) // an example from implementing an image from SF Symbols
+//                        Image(systemName: "\(city.icon)")
+//                            .symbolRenderingMode(.multicolor)
+//                            .resizable()
+//                            .aspectRatio(contentMode: .fit)
+//                            .frame(width: 160, height: 160, alignment: .center)
+                        
+                        
+                        // an example from implementing an image from SF Symbols
                         
 //                        Text("\(city.about[0].temperature)º")
 //                            .font(.system(size: 80, weight: .medium))

@@ -24,19 +24,26 @@ struct HomeScreenView: View {
                 // Creating a list
                 NavigationView{
                     
+                    
+                    
                     List(cities) {city in
                         // Example of navigationLink
                         NavigationLink(destination: ContentView()){
-                            CityItemView(city: city)
                             
+
+                            CityItemView(city: city)
+                                .navigationBarBackButtonHidden(true)
                         }
                         .padding()
                         .listStyle(PlainListStyle())
-                        
+                       
                         //NavigationView Modifiers
                         .navigationTitle("")
                         .toolbar {
+                            
                             ToolbarItem(placement: .principal) {
+                                
+                                
                                 HStack {
                                     Text("Portello")
                                     
@@ -48,8 +55,16 @@ struct HomeScreenView: View {
                                         .padding(.bottom, 10)
                                 }
                             }
+                            
                         }
                         
+                        
+                        
+                        
+                        
+                        
+                        
+//                        Settings
                         .navigationBarItems(trailing:
                                                 Button(action: {print("Settings")
                             showSheet.toggle()
@@ -76,6 +91,7 @@ struct HomeScreenView: View {
                         )
                         
                     } //navigation view
+                    
                 }
                 
                 //                ZStack(alignment: .leading){
@@ -141,8 +157,11 @@ struct HomeScreenView: View {
         
         
         }
+        
     }
+        
 }
+    
 
 
 struct HomeScreenView_Previews: PreviewProvider {

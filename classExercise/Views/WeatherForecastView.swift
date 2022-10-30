@@ -16,11 +16,11 @@ struct WeatherForecastView: View {
         
         VStack(spacing: 5){
             
-            Image(systemName: imageName)
-                .symbolRenderingMode(.multicolor)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 30, height: 30, alignment: .center)
+//            Image(systemName: imageName)
+//                .symbolRenderingMode(.multicolor)
+//                .resizable()
+//                .aspectRatio(contentMode: .fit)
+//                .frame(width: 30, height: 30, alignment: .center)
             
             Text("\(temperature)º")
                 .foregroundColor(.white)
