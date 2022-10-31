@@ -11,32 +11,32 @@
 <!-- HEADER SECTION -->
 <h5 align="center" style="padding:0;margin:0;">Nicolaas Geldenhuys</h5>
 <h5 align="center" style="padding:0;margin:0;">21100407</h5>
-<h6 align="center">Android 203 2022</h6>
+<h6 align="center">iOS 204 2022</h6>
 </br>
 <p align="center">
 
-  <a href="https://github.com/NicolaasGeldenhuys/Queezy-v3.0">
+  <a href="https://github.com/NicolaasGeldenhuys/Portello_ios">
     <img src="https://github.com/NicolaasGeldenhuys/Queezy-v3.0/blob/main/FG2.png" alt="Logo" width="140" height="140">
   </a>
   
-  <h3 align="center">Squeezy</h3>
+  <h3 align="center">Portello</h3>
 
   <p align="center">
-    The quirky food quiz <br>
-      <a href="https://github.com/NicolaasGeldenhuys/Queezy-v3.0"><strong>Explore the docs »</strong></a>
+    “A necessity for food recipes” <br>
+      <a href="https://github.com/NicolaasGeldenhuys/Portello_ios"><strong>Explore the docs »</strong></a>
    <br />
    <br />
-   <a href="https://drive.google.com/drive/folders/1hNYKpkvhI3R4o-p4rFvAK4_duCj3h4kF?usp=sharing">View Demo</a>
+   <a href="https://drive.google.com/file/d/1xpdWMyy5UBlYfdqN5f1EcT4RA9hs_-2x/view?usp=share_link">View Demo</a>
     ·
-    <a href="https://github.com/NicolaasGeldenhuys/Queezy-v3.0/issues">Report Bug</a>
+    <a href="https://github.com/NicolaasGeldenhuys/Portello_ios/issues">Report Bug</a>
     ·
-    <a href="https://github.com/NicolaasGeldenhuys/Queezy-v3.0/issues">Request Feature</a>
+    <a href="https://github.com/NicolaasGeldenhuys/Portello_ios/issues">Request Feature</a>
 </p>
 <!-- TABLE OF CONTENTS -->
 
 * [About the Project](#about-the-project)
   * [Project Description](#project-description)
-  * [Built With](#Kotlin)
+  * [Built With](#XCode)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [How to install](#how-to-install)
@@ -70,16 +70,17 @@
 
 ### Project Description
 
-Squeezy is the ultimate food quiz! 
-Think you’re the ultimate foodie? Prove it!<br>
+Portello is the perfect app for viewing your favourite recipes and having it all in the same place. It is an organised way of sorting and viewing all your recipes.<br>
 
-Squeezy is an entertainment gamified application
-built to test user’s knowledge of food across the globe. <br> Squeezy has multiple different categories upon which its questions are based. <br> These answers are updated on a highscore system as well as based on a profile system showing the score of each previous user.
+Portello stores all your recipes in one place efficiently and elegantly. View all your favorite recipes and sort them to your liking.
+
+Forget about ever looking through countless websites and books for your best recipes and enjoy!
 
 ### Built With
 
-* [Android Studio](https://developer.android.com/studio)
-* [Kotlin](https://kotlinlang.org/)
+* [XCode](https://developer.apple.com/xcode/)
+* [SwiftUI](https://developer.apple.com/xcode/swiftui/)
+* [Swift](https://developer.apple.com/swift/)
 <!-- GETTING STARTED -->
 <!-- Make sure to add appropriate information about what prerequesite technologies the user would need and also the steps to install your project on their own mashines -->
 ## Getting Started
@@ -88,7 +89,7 @@ The following instructions will get you a copy of the project up and running on 
 
 ### Prerequisites
 
-Ensure that you have the latest version of [Squeezy](https://drive.google.com/file/d/1TzRHoLd3U7Ljl10jp0sD4gwb6egn7Ax_/view?usp=sharing) installed on your machine. [Android Studio](https://developer.android.com/studio?gclid=CjwKCAjw3qGYBhBSEiwAcnTRLtXnalYPKA462mNMG3JzkWKuy4oEruVkWt0e6ptWFNIPmLXW3hryehoCAoAQAvD_BwE&gclsrc=aw.ds) will also be required.
+Ensure that you have the latest version of [Portello](https://github.com/NicolaasGeldenhuys/Portello_ios/) installed on your machine. [XCode](https://developer.apple.com/xcode/) will also be required.
 
 ### How to install
 
@@ -96,13 +97,13 @@ Ensure that you have the latest version of [Squeezy](https://drive.google.com/fi
 Here are a couple of ways to clone this repo:
 
 1. Software </br>
-`Android Studio` -> `File` -> `New` -> `From Version Control` -> `Git`</br>
-Enter `https://github.com/NicolaasGeldenhuys/Queezy-v3.0.git` into the URL field and press the `Clone` button.
+`XCode` -> `File` -> `New` -> `From Version Control` -> `Git`</br>
+Enter `https://github.com/NicolaasGeldenhuys/Portello_ios.git` into the URL field and press the `Clone` button.
 
 2. Clone Repository </br>
 Run the following in the command-line to clone the project:
    ```sh
-   git clone https://github.com/NicolaasGeldenhuys/Squeezy-v3.0.git
+   git clone https://github.com/NicolaasGeldenhuys/Portello_ios.git
    ```
     Open `Software` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
 
@@ -154,19 +155,19 @@ The `Development Process` is the technical implementations and functionality don
 ### Implementation Process
 <!-- stipulate all of the functionality you included in the project -->
 
-* For this project my entire application was based off of Kotlin through Android Studio. I made use of Android’s Material UI components in regards of my application’s look and feel and designed everything on Figma. Furthermore I tested the user flow as well as design principles’ effectivity through Figma’s prototyping tools.
+* For this project my entire application was based off of Swift & SwiftUI through XCode. I made use of iOS’s components in regards of my application’s look and feel and designed everything on Figma. Furthermore I tested the user flow as well as design principles’ effectivity through Figma’s prototyping tools.
 
 #### Highlights
 <!-- stipulated the highlight you experienced with the project -->
-The most important and most obvious learning with this module was programming an application for mobile and learning the functionality behind both the language as well as Android Studio as an IDE for apps! <br> I learned a lot from things ranging from device compatibility, to software compatibility as well as general cohesiveness between different pages as well as components. <br> I have become a lot more comfortable with the overall idea of development for Android and have had a lot of experience with planning accordingly throughout this term!pages as well as components.
+The most important learning with this module was programming an application for iOS and learning the iOS ecosystem for the first time. <br> I also learned a lot from using Swift and SwiftUI in XCode which are all languages/interfaces new to me. <br> I have become a lot more comfortable with the overall idea of development for mobile in general and have learned a lot from both iOS and MacOS as operating systems.
 
 #### Challenges
 <!-- stipulated the challenges you faced with the project and why you think you faced it or how you think you'll solve it (if not solved) -->
-By far the biggest challenge for me this term was getting back into development after not doing any programming work in the last year. As an XD student this was very informative and exactley the background experience I wanted to achieve!
+By far the toughest challenge this term was not the project but rather compatibility for working on the project itself. Finding a compatible device to use XCode cost me a lot of time but I’m happy I did manage to catch up quite well.
 <br>
-Secondly, was learning a new language based a lot on Java, at first I really struggled finding my feet but I did really start understanding Kotlin in the last week and got back into the groove of programming!
+Working out time management with being behind after 4 weeks was quite a challenge in terms of keeping up with other projects and learning a new language for development.
 <br>
-Time management was as always a very concerning stress factor but I managed to do a proficient job given the timeframe!
+Lastly figuring out how different Swift is from other languages while appreciating its neat functionality was also a challenge.
 
 ### Reviews & Testing
 <!-- stipulate how you've conducted testing in the form of peer reviews, feedback and also functionality testing, like unit tests (if applicable) -->
@@ -175,8 +176,8 @@ Time management was as always a very concerning stress factor but I managed to d
 
 `Peer Reviews` were conducted by my fellow students and lecturer. The following feedback I found useful:
 
-* Make the question buttons bigger.
-* Have consistency between elements.
+* Making the images bigger.
+* Having consistency between elements.
 
 #### Unit Tests
 
@@ -188,8 +189,8 @@ Time management was as always a very concerning stress factor but I managed to d
 ### Future Implementation
 <!-- stipulate functionality and improvements that can be implemented in the future. -->
 
-* Better leaderboard system.
-* Fixed overriden icons and add more questions/categories..
+* Better recipe display system.
+* Have more fixed components and small tweaks.
 
 <!-- MOCKUPS -->
 ## Final Outcome
@@ -205,7 +206,7 @@ Time management was as always a very concerning stress factor but I managed to d
 
 To see a run through of the application, click below:
 
-[View Demonstration](https://drive.google.com/drive/u/1/folders/1hNYKpkvhI3R4o-p4rFvAK4_duCj3h4kF)
+[View Demonstration](https://drive.google.com/file/d/1xpdWMyy5UBlYfdqN5f1EcT4RA9hs_-2x/view?usp=share_link)
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -245,7 +246,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 * [Stack Overflow](https://stackoverflow.com/)
 * [App Icon Tutorial](https://www.youtube.com/watch?v=DQ8HDL-X9rM)
 * [Xcode](https://www.geeksforgeeks.org/how-to-create-a-splash-screen-in-android-using-kotlin/](https://www.hackingwithswift.com/)
-* [Snapdrop](https://snapdrop.net/)
+* [Swift](https://developer.apple.com/swift/)
+* [SwiftUI](https://developer.apple.com/xcode/swiftui/)
 * [Figma](https://Figma.com/)
 
 
