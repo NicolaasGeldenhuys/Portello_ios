@@ -77,7 +77,7 @@ struct ContentView: View {
                         .lineSpacing(5)
                         } //Scrollview
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        frame(height: 80)
+                        .frame(height: 80)
                     
                 } // DisclosureGroup
                 .padding(.leading, 20)

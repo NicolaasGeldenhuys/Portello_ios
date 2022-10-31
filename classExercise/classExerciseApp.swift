@@ -19,7 +19,7 @@ struct classExerciseApp: App {
                 HomeScreenView()
                     .preferredColorScheme(isDarkMode ? .dark : .light) // uses the app's preferences
             } else {
-                OnboardingViewScreen()
+                SplashScreenView_()
             }
         }
     }
