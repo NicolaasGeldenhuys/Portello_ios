@@ -114,17 +114,17 @@ Run the following in the command-line to clone the project:
 ![image2][image2]
 ### Feature 1
 
-Multiple Categories with different context.
+List of your favourite recipes.
 
 ![image3][image3]
 ### Feature 2
 
-See previous user's score and keep track of your own!
+View your favourite recipes, ingredients and instructions.
 
 ![image4][image4]
 ### Feature 3
 
-Reset your highscores and make sure you get full marks!
+Customize and see info on your app!
 
 ![image5][image5]
 
@@ -245,23 +245,23 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- all resources that you used and Acknowledgements here -->
 * [Stack Overflow](https://stackoverflow.com/)
 * [App Icon Tutorial](https://www.youtube.com/watch?v=DQ8HDL-X9rM)
-* [Xcode](https://www.geeksforgeeks.org/how-to-create-a-splash-screen-in-android-using-kotlin/](https://www.hackingwithswift.com/)
+* [Xcode](https://developer.apple.com/xcode/)
 * [Swift](https://developer.apple.com/swift/)
 * [SwiftUI](https://developer.apple.com/xcode/swiftui/)
 * [Figma](https://Figma.com/)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[image1]: https://github.com/NicolaasGeldenhuys/Queezy-v3.0/blob/main/Screenshot%201.jpg
-[image2]: https://github.com/NicolaasGeldenhuys/Queezy-v3.0/blob/main/NicolaasGeldenhuys_21100407_Android203_Promotional_Material_2.png
-[image3]: https://github.com/NicolaasGeldenhuys/Queezy-v3.0/blob/main/categories.png
-[image4]: https://github.com/NicolaasGeldenhuys/Queezy-v3.0/blob/main/result.png
-[image5]: https://github.com/NicolaasGeldenhuys/Queezy-v3.0/blob/main/NicolaasGeldenhuys_21100407_Android203_Promotional_Material_3.png
-[image6]: https://github.com/NicolaasGeldenhuys/Queezy-v3.0/blob/main/colour_palette.png
-[image7]: https://github.com/NicolaasGeldenhuys/Queezy-v3.0/blob/main/themes%26categories.png
-[image8]: https://github.com/NicolaasGeldenhuys/Queezy-v3.0/blob/main/wireframes.png
-[image9]: https://github.com/NicolaasGeldenhuys/Queezy-v3.0/blob/main/NicolaasGeldenhuys_21100407_Android203_Promotional_Material_1.png
-[image10]:https://github.com/NicolaasGeldenhuys/Queezy-v3.0/blob/main/NicolaasGeldenhuys_21100407_Android203_Promotional_Material_5.png
+[image1]: https://github.com/NicolaasGeldenhuys/Portello_ios/blob/main/Image%201.png
+[image2]: https://github.com/NicolaasGeldenhuys/Portello_ios/blob/main/Image%202.png
+[image3]: https://github.com/NicolaasGeldenhuys/Portello_ios/blob/main/Image%203.png
+[image4]: https://github.com/NicolaasGeldenhuys/Portello_ios/blob/main/Image%204.png
+[image5]: https://github.com/NicolaasGeldenhuys/Portello_ios/blob/main/Image%205.png
+[image6]: https://github.com/NicolaasGeldenhuys/Portello_ios/blob/main/Image%206.png
+[image7]: https://github.com/NicolaasGeldenhuys/Portello_ios/blob/main/Image%207.png
+[image8]: https://github.com/NicolaasGeldenhuys/Portello_ios/blob/main/Image%208.png
+[image9]: https://github.com/NicolaasGeldenhuys/Portello_ios/blob/main/Image%209.png
+[image10]: https://github.com/NicolaasGeldenhuys/Portello_ios/blob/main/Image%2010.png
 
 
 <!-- Refer to https://shields.io/ for more information and options about the shield links at the top of the ReadMe file -->
