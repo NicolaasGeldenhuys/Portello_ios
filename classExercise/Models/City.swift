@@ -12,4 +12,5 @@ struct City: Identifiable {
     var about: String
     var ingred: String
     var level: String
+    var serves: String
 }

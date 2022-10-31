@@ -18,7 +18,7 @@ let CityData : [City] = [
          
          
          
-         """, level: "Easy"),
+         """, level: "Easy", serves: "6" ),
     
     City(name: "Sushi Classics", by: "Annatjie", icon: "sushi", image2: "sushi2", time: "40", about: "The cultural smashit for every generation. This recipe will astonish.", ingred: """
          
@@ -33,7 +33,7 @@ let CityData : [City] = [
          
          
          
-    """, level: "Easy" ),
+    """, level: "Easy", serves: "1" ),
     
     City(name: "Hotdog Twists", by: "Jeanette", icon: "hotdog", image2: "hotdog2", time: "10", about: "True to its roots, sometimes nothing beats a classy sausage.", ingred: """
          
@@ -48,7 +48,7 @@ let CityData : [City] = [
          
          
          
-    """, level: "Medium" ),
+    """, level: "Medium", serves: "2" ),
     
     City(name: "Starter Love", by: "Jennifer", icon: "starter", image2: "starter2", time: "15", about: "Never have you been teased with food this great. Starter love anyone?", ingred: """
          
@@ -63,7 +63,7 @@ let CityData : [City] = [
          
          
          
-    """, level: "Easy" ),
+    """, level: "Easy", serves: "4" ),
     
     City(name: "The best potatoes", by: "Connie", icon: "bread", image2: "bread2", time: "45", about: "Potatoes, easy to make, hard to master. Not with this recipe, learn how to cook like a pro!", ingred: """
          
@@ -78,7 +78,7 @@ let CityData : [City] = [
          
          
          
-    """, level: "Hard" ),
+    """, level: "Hard", serves: "2" ),
     
     City(name: "Dessert for all", by: "Martin", icon: "dessert", image2: "dessert2", time: "35", about: "Sweetness galore that you have to explore. Please try it out, I implore.", ingred: """
          
@@ -92,7 +92,7 @@ let CityData : [City] = [
          
          
          
-    """, level: "Hard" ),
+    """, level: "Hard", serves: "1" ),
     
 ]
 
@@ -116,7 +116,7 @@ func filteredByEasy(code: String) -> [City] {
          
          
          
-         """, level: "Easy"))
+         """, level: "Easy", serves: "6" ))
                       
         cities.append(City(name: "Sushi Classics", by: "Annatjie", icon: "sushi", image2: "sushi2", time: "40", about: "The cultural smashit for every generation. This recipe will astonish.", ingred: """
          
@@ -131,7 +131,7 @@ func filteredByEasy(code: String) -> [City] {
          
          
          
-    """, level: "Easy" ))
+    """, level: "Easy", serves: "1"  ))
                       
                       cities.append(City(name: "Starter Love", by: "Jennifer", icon: "starter", image2: "starter2", time: "15", about: "Never have you been teased with food this great. Starter love anyone?", ingred: """
          
@@ -146,7 +146,7 @@ func filteredByEasy(code: String) -> [City] {
          
          
          
-    """, level: "Easy" ))
+    """, level: "Easy", serves: "2"  ))
                       
             
         
@@ -166,7 +166,7 @@ func filteredByEasy(code: String) -> [City] {
                  
                  
                  
-            """, level: "Medium" ))
+            """, level: "Medium", serves: "4"  ))
     } else if (code == "Hard") {
         
         cities.append(City(name: "The best potatoes", by: "Connie", icon: "bread", image2: "bread2", time: "45", about: "Potatoes, easy to make, hard to master. Not with this recipe, learn how to cook like a pro!", ingred: """
@@ -182,7 +182,7 @@ func filteredByEasy(code: String) -> [City] {
          
          
          
-    """, level: "Hard" ))
+    """, level: "Hard", serves: "2"  ))
         
         cities.append(City(name: "Dessert for all", by: "Martin", icon: "dessert", image2: "dessert2", time: "35", about: "Sweetness galore that you have to explore. Please try it out, I implore.", ingred: """
          
@@ -196,7 +196,7 @@ func filteredByEasy(code: String) -> [City] {
          
          
          
-    """, level: "Hard"))
+    """, level: "Hard", serves: "1" ))
         
     } else {
         cities = CityData

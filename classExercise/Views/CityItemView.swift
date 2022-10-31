@@ -16,8 +16,8 @@ struct CityItemView: View {
                 .renderingMode(.original)
                 .resizable()
                 .scaledToFill()
-                .cornerRadius(-150)
-                .frame(width: 385, height: 135, alignment: .center)
+                .cornerRadius(40)
+                .frame(width: 440, height: 180, alignment: .center)
 //                .frame(minWidth: 385, maxWidth: 385, minHeight: 135,maxHeight: 135)
                 
 //                .padding(.leading, 20)

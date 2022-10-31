@@ -18,6 +18,9 @@ struct ContentView: View {
             
 //            GeometryReader { geo in
                 ZStack{
+                    
+
+                    
                     Color("bg2")
                         .ignoresSafeArea(.all)
                     
@@ -87,7 +90,7 @@ struct ContentView: View {
                                 .padding(.top, 730)
                                 .padding(.leading, -150)
                             
-                            Text("Easy")
+                            Text("\(city.level)")
                                 .fontWeight(.regular)
                                 .foregroundColor(Color("bg"))
                                 .font(Font.custom("Montserrat", size: 18))
@@ -103,7 +106,7 @@ struct ContentView: View {
                                 .padding(.top, 730)
                                 .padding(.leading, 150)
                             
-                            Text("6")
+                            Text("\(city.serves)")
                                 .fontWeight(.regular)
                                 .foregroundColor(Color("bg"))
                                 .font(Font.custom("Montserrat", size: 18))
@@ -143,6 +146,10 @@ struct ContentView: View {
                     } //ZStack bottom rectangle
                     
                     
+//                    ForEach(city.CityData, id: \.self.id) {
+//                        temp in
+//                        CityData(name: temp.name, by: temp.by, icon: temp.icon, image2: temp.image2, time: temp.time, about: temp.about, ingred: temp.ingred, level: temp.level, serves: temp.serves)
+//                    }
                     
                     
                     Spacer()
@@ -230,7 +237,7 @@ struct ContentView: View {
                     HStack {
                         
                         
-                        Text("\(city.by)")
+                        Text("By \(city.by)")
                             .foregroundColor(.white)
                             .font(Font.custom("Montserrat", size: 16))
                             .fontWeight(.regular)
@@ -310,14 +317,20 @@ struct ContentView: View {
                             
                             //                        HStack(spacing: 15){
                             //
-                            ////                             Example of for loop
-                            //                            ForEach(City.about, id: \.self.id) {temp in
-                            //                                WeatherForecastView(dayOfWeek: temp.dayOfWeek, imageName: temp.imageName, temperature: temp.temperature)
-                            //                            }
-                            //                        }
+                          
                             
                             Spacer()
                             
+                            
+                            Button(action: {
+                                guard let google = URL(string: "https://www.healthyfood.com/"),
+                                    UIApplication.shared.canOpenURL(google) else {
+                                    return
+                                }
+                                UIApplication.shared.open(google,
+                                                          options: [:],
+                                                          completionHandler: nil)
+                            }) {
                             TabView{
                                 Image("link1")
                                     .resizable()
@@ -331,6 +344,7 @@ struct ContentView: View {
                                 
                                 
                             }
+                        } //link
                             
                             .frame(width: 375, height: 150)
                             
@@ -355,6 +369,13 @@ struct ContentView: View {
                         }
                     }
                 }
+            
+            
+
+//                                                } //temp
+//                                            } //ForEach
+            
+            
             }
         }
 //    } //Gemoetry Reader
