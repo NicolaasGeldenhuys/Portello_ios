@@ -13,48 +13,21 @@ struct OnboardingViewScreen: View {
     
     var body: some View {
         
-//        WindowGroup{
-//            SplashScreenView_()
-//        }
-        
             ZStack{
                 Color("bg2")
                     .ignoresSafeArea(.all)
-                
+    
                 VStack(){
-                    
-                    
                     TabView{
                         ForEach(onboarding) { onboard in
                             OnboardCardView(onboard: onboard)
                         }
-                        
                     }//tabview
-                    
-                    
-                    
                     .tabViewStyle(.page)
-                    //           Spacer()
-                    
-                  
                     
                     Button(action: {
                         //Set onboarding complete
                         onboardingComplete = true
-                        
-                        
-//                        NavigationStack(path: $path) {
-//
-//                                        path.append("HomeScreenView")
-//                                    }
-                            
-//                                    .navigationDestination(for: String.self) { view in
-//                                        if view == "HomeScreenView" {
-//                                            Text("This is NewView")
-//                                        }
-//                                    }
-                                
-                        
                     }) {
                         Text("Home")
                             .padding(.top,10)
@@ -64,30 +37,16 @@ struct OnboardingViewScreen: View {
                             .foregroundColor(Color("bg"))
                             .font(Font.custom("Montserrat", size: 18))
                             .fontWeight(.regular)
-                            
                             .overlay(
                                 RoundedRectangle(cornerRadius: 40).fill(Color("bg")).opacity(0.2)
-                                
-                                
-                                
-                                
                             )
-                        
-                        
-                        //                    .padding(.leading,60)
                     }
                     
                 }
                 .padding(.top,-60)
-                
-                //        .padding(.leading,-60)
             }
-        
     }
 }//ZStack
-//    }//zstack for image
-//}//georeader
-
 
 struct OnboardingViewScreen_Previews: PreviewProvider {
     static var previews: some View {

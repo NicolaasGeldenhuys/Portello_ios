@@ -11,7 +11,6 @@ struct OnboardCardView: View {
             GeometryReader { geo in
                 
                 ZStack{
-                    
                     Image(onboard.image)
                         .resizable()
                         .scaledToFill()
@@ -23,38 +22,22 @@ struct OnboardCardView: View {
                         .fontWeight(.regular)
                         .padding(.top,-80)
                         .padding(.leading,-190)
-                        
                         .font(Font.custom("Gobold CUTS", size: 40))
                         .frame(width: 20, height: .infinity,alignment: .leading)
                     
-                   
-                        
+
                         Text("""
             \(onboard.description)
             """)
-                        
                         .font(Font.custom("Montserrat", size: 22))
                         .fontWeight(.regular)
                         .frame(width: 350)
                         .padding(.top, 150)
                         .padding(.leading,-20)
-                        
                         .lineSpacing(5)
                         
-//                        .frame(width: 220, height: 150, alignment: .leading)
-                    
-//                    .border(.white)
-                    
                     Spacer()
                     ZStack{
-                        //                Circle()
-                        //                    .stroke(.white.opacity(0.2), lineWidth: 40)
-                        //                    .frame(width: 260, height: 260, alignment: .center)
-                        //
-                        //                Circle()
-                        //                    .stroke(.white.opacity(0.2), lineWidth: 80)
-                        //                    .frame(width: 260, height: 260, alignment: .center)
-                        
                         Image(systemName: onboard.icon)
                             .renderingMode(.original)
                             .resizable()

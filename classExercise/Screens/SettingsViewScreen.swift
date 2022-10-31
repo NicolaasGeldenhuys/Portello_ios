@@ -17,7 +17,6 @@ struct SettingsViewScreen: View {
         GeometryReader { geo in
             
             ZStack{
-                
                 Image("settings")
                     .resizable()
                     .scaledToFill()
@@ -25,8 +24,6 @@ struct SettingsViewScreen: View {
                     .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
                     .ignoresSafeArea(.all)
                     
-                
-                
                 ZStack{
                     Color("bg2")
                         .ignoresSafeArea(.all)
@@ -39,12 +36,10 @@ struct SettingsViewScreen: View {
                             .fontWeight(.regular)
                             .padding(.vertical, 10)
                         
-                        
                         Divider()
                         
-                        //              Name
+                        //Name
                         GroupBox{
-                            
                             DisclosureGroup("Name", isExpanded: $showName){
                                 Text("""
                     Portello - A necessity for food recipes.
@@ -54,17 +49,12 @@ struct SettingsViewScreen: View {
                                 .font(Font.custom("Montserrat", size: 16))
                                 .fontWeight(.regular)
                                 .padding(.top, 20)
-                                
                             }
-                            
                         }
-                        
-                        
-                        
+
                         //              Version
                         GroupBox{
-                            
-                            DisclosureGroup("Version", isExpanded: $showVersion){
+                        DisclosureGroup("Version", isExpanded: $showVersion){
                                 Text("""
                                     v1.0.0
                                     
@@ -76,11 +66,8 @@ struct SettingsViewScreen: View {
                             }
                             
                         }
-                        
-                        
-                        
+
                         //                App description
-                        
                         GroupBox{
                             
                             DisclosureGroup("Description", isExpanded: $showAbout){
@@ -96,10 +83,8 @@ struct SettingsViewScreen: View {
                             }
                             
                         }
-                        
-                        
+
                         //                Source Code
-                        
                         GroupBox{
                             HStack{
                                 
@@ -110,8 +95,6 @@ struct SettingsViewScreen: View {
                                 
                             }
                         }
-                        
-                        
                         
                         Divider()
                         
@@ -125,12 +108,6 @@ struct SettingsViewScreen: View {
                         Spacer()
                     }
                     .padding()
-                    
-                    
-                    //        .onAppear(perform: {
-                    //            colorScheme == .dark ? isDarkMode = true
-                    //        })
-                    
                 }
             }
         }//Zstack

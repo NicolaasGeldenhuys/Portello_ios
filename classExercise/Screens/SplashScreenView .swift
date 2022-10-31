@@ -3,9 +3,7 @@ import SwiftUI
 
 struct SplashScreenView_: View {
     @State private var isActive = false
-//    @State private var size = 0.8
-//    @State private var opacity = 0.5
-    
+ 
     var body: some View {
         if isActive {
             OnboardingViewScreen()
@@ -22,20 +20,12 @@ struct SplashScreenView_: View {
                                 .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
                                 .ignoresSafeArea(.all)
                                 .padding(.top,46)
-                                
-                            
                         }//ZStack
                     }//Georeader
-                    
-//                    .scaleEffect(size)
-//                    .opacity(opacity)
                     .onAppear {
                         withAnimation(.easeIn(duration: 1.2)) {
-//                    self.size = 0.9
-//                    self.opacity = 1.0
                 }
                     }
-                    
                 }//VStack1
                 
                 .onAppear {
@@ -47,8 +37,6 @@ struct SplashScreenView_: View {
                 }
             }//VStack2
         }
-        
-        
     }
 }
 

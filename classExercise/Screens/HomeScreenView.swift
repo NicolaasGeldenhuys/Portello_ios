@@ -4,7 +4,7 @@ import SwiftUI
 
 struct HomeScreenView: View {
     
-    // MARK: - Properties
+    //Properties
     @State var cities: [City] = CityData
     
     @State var showSheet: Bool = false
@@ -26,72 +26,27 @@ struct HomeScreenView: View {
             return CityData.filter { $0.by.contains(searchText) } //filtereing data through search
         }
     }
-    
 
-    
     @State var searchText: String = ""
-    
     var body: some View {
 
             // Creating a list
             NavigationView{
-                
             ZStack{
                 Color("bg2")
                     .ignoresSafeArea(.all)
-                
                 List(searchText.isEmpty ? cities : filteredCities) {city in
                         // Example of navigationLink
                         NavigationLink(destination: ContentView()){
                             CityItemView(city: city)
                         } 
-//                        .listStyle(PlainListStyle())
-//                        .padding(.leading, 18)
-                        
-                        
-                       
-                    
-//                        .listItemTint(.black)
-//                        .listRowBackground(Color(.white))
-//                        .listSectionSeparator(.hidden)
-//                        .listRowSeparatorTint(.white)
-//                        .frame(minWidth: 200, maxWidth: 200, minHeight: 200, maxHeight: 400)
-//
-//                        .scrollContentBackground(.hidden)
-//                        .listRowSeparator(.hidden)
-                      
-                        
+             
 //                        Settings
                         .navigationBarItems(trailing:
                         Button(action: {print("Settings")
                         showSheet.toggle()
                         }){ 
-//                                Picker("Mode", selection: $easy) {
-//                                    Text("Easy").tag(false)
-//                                        .onTapGesture {
-//                                            self.cities = filteredByEasy(code: "Easy")
-//                                        }
-//
-//
-//                                    Text("Medium").tag(false)
-//                                        .onTapGesture {
-//                                            self.cities = filteredByEasy(code: "Medium")
-//                                        }
-//                                    Text("Hard").tag(false)
-//                                        .onTapGesture {
-//                                            self.cities = filteredByEasy(code: "Hard")
-//                                        }
-//                                }
-//                                .pickerStyle(SegmentedPickerStyle())
-//                                .padding(.top, 80)
-//                                .padding(.leading, -40)
-//                                .padding(.trailing, -40)
-//
-//                                Spacer()
-                                    
-                            
-                            
-                            
+
                         Image(systemName: "gearshape")
                         .renderingMode(.original)
                         .foregroundColor(Color("bg"))
@@ -100,13 +55,9 @@ struct HomeScreenView: View {
                             
                         }.sheet(isPresented: $showSheet){
                             SettingsViewScreen()
-                            
                         }
-                                            
-                                            
                     ) //Navigation Bar Items
                         
-                    
                         ZStack{
                             Text("")
                                 .navigationBarTitleDisplayMode(.inline)
@@ -125,41 +76,24 @@ struct HomeScreenView: View {
                                                 
                                         }
                                     }
-                                } //toolbar
-                            
-                        } //ZStack navigationbartitledisplaymode
-                        
+                } //toolbar
+                } //ZStack navigationbartitledisplaymode
                 } //List
-               
                 .padding(.top, 50)
                 .listStyle(SidebarListStyle())
-//                .padding(.leading, 18)
-                
                 .cornerRadius(40)
-               
-            
-//                .listItemTint(.red)
-//                .listRowBackground(Color(.red))
-//                .listSectionSeparator(.hidden)
-//                .listRowSeparatorTint(.white)
-//                .frame(minWidth: 200, maxWidth: 200, minHeight: 200, maxHeight: 400)
-            
-//                .scrollContentBackground(.hidden)
                 .listRowSeparator(.hidden)
                 
-                
                 Picker("Mode", selection: $easy) {
-                    Text("Easy").tag(true)
+                    Text("Easy").tag(false)
                         .onTapGesture {
                             self.cities = filteredByEasy(code: "Easy")
                         }
-                    
-                    
-                    Text("Medium").tag(true)
+                    Text("Medium").tag(false)
                         .onTapGesture {
                             self.cities = filteredByEasy(code: "Medium")
                         }
-                    Text("Hard").tag(true)
+                    Text("Hard").tag(false)
                         
                         .onTapGesture {
                             self.cities = filteredByEasy(code: "Hard")
@@ -170,22 +104,16 @@ struct HomeScreenView: View {
                 .padding(.leading, -40)
                 .padding(.trailing, -40)
                 .frame(minWidth: 200,maxWidth: 280)
+                .padding(.bottom,5)
                 
                 Spacer()
             }
             }
-            
-//            .padding(.top, 40)
             .searchable(text: $searchText)
-            
     } // Navigation View
-    
-        
 } // Body
-    
 
-
-
+//Bottom Bar - Left out for efficiency.
 //                ZStack{
 //                    Rectangle()
 //                        .foregroundColor(Color("bg2"))
@@ -234,10 +162,6 @@ struct HomeScreenView: View {
 //                    } // HStack Bottom rectangle
 //                } // Zstack bottom rectangle
                 
-              
-    
-
-
 struct HomeScreenView_Previews: PreviewProvider {
     static var previews: some View {
         HomeScreenView()
